@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+     <TextView
+         android:id="@+id/textView12"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="16dp"
+         android:layout_marginTop="16dp"
+         android:fontFamily="@font/roboto"
+         android:text="Courses"
+         android:textAlignment="center"
+         android:textColor="#009200"
+         android:textSize="22sp"
+         android:textStyle="bold"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+
+     <LinearLayout
+         android:id="@+id/linearLayout6"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="16dp"
+         android:layout_marginTop="16dp"
+         android:layout_marginEnd="16dp"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+          <ListView
+              android:id="@+id/lv_Course"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:divider="@null" />
+     </LinearLayout>
+
+     <TextView
+         android:id="@+id/textView9"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="16dp"
+         android:layout_marginTop="8dp"
+         android:fontFamily="@font/roboto"
+         android:text="Discussion Forum"
+         android:textAlignment="center"
+         android:textColor="#009200"
+         android:textSize="22sp"
+         android:textStyle="bold"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+     <androidx.cardview.widget.CardView
+         android:id="@+id/cardView_question_list"
+         android:layout_width="140dp"
+         android:layout_height="wrap_content"
+         android:minHeight="150dp"
+         app:cardBackgroundColor="#b2ee8a"
+         app:cardCornerRadius="16dp"
+         app:layout_constraintBottom_toBottomOf="@+id/cardView_your_questions"
+         app:layout_constraintEnd_toEndOf="@+id/linearLayout6"
+         app:layout_constraintHorizontal_bias="0.5"
+         app:layout_constraintStart_toEndOf="@+id/cardView_your_questions"
+         app:layout_constraintTop_toTopOf="@+id/cardView_your_questions">
+
+          <!--    app:cardElevation="10dp"-->
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:orientation="vertical">
+
+               <ImageView
+                   android:layout_width="100dp"
+                   android:layout_height="80dp"
+                   android:layout_gravity="center"
+                   android:adjustViewBounds="true"
+                   android:cropToPadding="true"
+                   android:maxWidth="100dp"
+                   android:src="@drawable/discussion_forum" />
+
+               <TextView
+                   android:id="@+id/tv_qustion_list"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginBottom="10dp"
+                   android:text="Question List"
+                   android:textColor="@color/black"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+          </LinearLayout>
+
+
+     </androidx.cardview.widget.CardView>
+
+     <androidx.cardview.widget.CardView
+         android:id="@+id/cardView_your_questions"
+         android:layout_width="140dp"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="16dp"
+         android:minHeight="150dp"
+         app:cardBackgroundColor="#a3fb64"
+         app:cardCornerRadius="16dp"
+         app:layout_constraintEnd_toStartOf="@+id/cardView_question_list"
+         app:layout_constraintHorizontal_bias="0.5"
+         app:layout_constraintStart_toStartOf="@+id/textView9"
+         app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:orientation="vertical">
+
+               <ImageView
+                   android:layout_width="100dp"
+                   android:layout_height="80dp"
+                   android:layout_gravity="center"
+                   android:adjustViewBounds="true"
+                   android:cropToPadding="true"
+                   android:maxWidth="100dp"
+                   android:src="@drawable/refer_icon" />
+
+               <TextView
+                   android:id="@+id/tv_your_questions"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginBottom="10dp"
+                   android:text="Your Questions"
+                   android:textColor="@color/black"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+          </LinearLayout>
+
+
+     </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

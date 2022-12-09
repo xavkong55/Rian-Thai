@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rianthai">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RianThai">
+        <activity
+            android:name=".activity.HomeAdminActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.UpdateActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.EditContentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.EditQuizActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.EditCourseActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.AdminHomePageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.QuestionCreateActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.QuestionViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ChapterListForum"
+            android:exported="true" />
+        <activity
+            android:name=".activity.CreateChapterContentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.Example"
+            android:exported="true" />
+        <activity
+            android:name=".activity.LoadingScreenActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.QuizActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.FlashCardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.QuestionForumActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.CreateEditForumActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.QuestionListForumActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ChapterForumActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ChapterContentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ChapterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.DiscussionForumActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".activity.ConfirmationCodeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.BarChartActivity"
+            android:exported="true"
+            android:theme="@style/Theme.RianThai.NoActionBar" />
+        <activity
+            android:name=".activity.TranslationResultActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.AboutUsAcitivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.EditProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.TranslationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.CourseActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.HomepageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.PasswordConfirmationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ResetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

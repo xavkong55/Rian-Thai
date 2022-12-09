@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_content_photo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_consonant_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:foregroundGravity="center_horizontal"
+        android:padding="5dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_content_photo"
+        app:layout_constraintStart_toStartOf="@+id/iv_content_photo"
+        app:layout_constraintTop_toBottomOf="@+id/iv_content_photo" />
+
+    <TextView
+        android:id="@+id/tv_consonant_pron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:foregroundGravity="center_horizontal"
+        android:padding="5dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_consonant_eng"
+        app:layout_constraintStart_toStartOf="@+id/tv_consonant_eng"
+        app:layout_constraintTop_toBottomOf="@+id/tv_consonant_eng" />
+
+    <TextView
+        android:id="@+id/tv_consonant_eng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:foregroundGravity="center_horizontal"
+        android:padding="5dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_consonant_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_consonant_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_consonant_title" />
+
+    <View
+        android:id="@+id/view_front"
+        style="@style/Divider"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/tv_consonant_pron" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
